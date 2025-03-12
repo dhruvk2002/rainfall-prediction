@@ -7,6 +7,7 @@ model = joblib.load("rainfall_prediction_model.pkl")
 
 # Flask app
 app = Flask(__name__)
+# Changes check
 
 @app.route('/predict', methods=['POST'])
 def predict():
